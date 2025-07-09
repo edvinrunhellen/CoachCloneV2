@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "5sJmsOzF4vJ09B+B9YmENnmDr8e3PVfhRCK/vWdAf6g=",
+  "Source": "CoachClone.Api",
+  "BasePath": "_content/CoachClone.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
