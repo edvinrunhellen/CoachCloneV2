@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CoachClone.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c531e7a68c09b1f74de6395b11d97c806a04bb3c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1fb5f7b32c8c352cbd958d430131448dbd1dff73")]
 [assembly: System.Reflection.AssemblyProductAttribute("CoachClone.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CoachClone.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

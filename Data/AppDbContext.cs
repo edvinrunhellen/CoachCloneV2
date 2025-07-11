@@ -8,6 +8,9 @@ namespace CoachClone.Api.Data
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
         public DbSet<User> Users { get; set; }
+
+        public DbSet<Journal> Journals { get; set; }
+
         // Senare: public DbSet<JournalFile> JournalFiles { get; set; }
     }
 }

@@ -169,3 +169,7 @@
 /Users/edvinrunhellen/Documents/CoachClone.Api/obj/Debug/net8.0/ref/CoachClone.Api.dll
 /Users/edvinrunhellen/Documents/CoachClone.Api/obj/Debug/net8.0/CoachClone.Api.sourcelink.json
 /Users/edvinrunhellen/Documents/CoachClone.Api/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/edvinrunhellen/Documents/CoachClone.Api/bin/Debug/net8.0/clientapp/package-lock.json
+/Users/edvinrunhellen/Documents/CoachClone.Api/bin/Debug/net8.0/clientapp/package.json
+/Users/edvinrunhellen/Documents/CoachClone.Api/bin/Debug/net8.0/clientapp/public/manifest.json
+/Users/edvinrunhellen/Documents/CoachClone.Api/bin/Debug/net8.0/clientapp/tsconfig.json
