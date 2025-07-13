@@ -19,16 +19,33 @@ namespace CoachClone.Api.Controllers
 
         [HttpPost("upload")]
         [Authorize]
-        public async Task<IActionResult> UploadJournal([FromBody] JournalUploadDto request)
+        [Consumes("multipart/form-data")]
+        public async Task<IActionResult> UploadJournal([FromForm] JournalUploadFileDto request)
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-
             if (userId == null)
                 return Unauthorized();
 
+            var file = request.File;
+
+            if (file == null || file.Length == 0)
+                return BadRequest("No file uploaded.");
+
+            if (file.Length > 5 * 1024 * 1024)
+                return BadRequest("File too large (max 5 MB).");
+
+            if (file.ContentType != "application/pdf" && file.ContentType != "text/plain")
+                return BadRequest("Only PDF or text files are allowed.");
+
+            string content;
+            using (var reader = new StreamReader(file.OpenReadStream()))
+            {
+                content = await reader.ReadToEndAsync();
+            }
+
             var journal = new Journal
             {
-                Content = request.Content,
+                Content = content,
                 UserId = int.Parse(userId)
             };
 
@@ -37,10 +54,17 @@ namespace CoachClone.Api.Controllers
 
             return Ok("Journal uploaded!");
         }
+
+
     }
 
     public class JournalUploadDto
     {
         public string Content { get; set; }
+    }
+
+    public class JournalUploadFileDto
+    {
+        public IFormFile File { get; set; }
     }
 }
