@@ -173,3 +173,4 @@
 /Users/edvinrunhellen/Documents/CoachClone.Api/bin/Debug/net8.0/clientapp/package.json
 /Users/edvinrunhellen/Documents/CoachClone.Api/bin/Debug/net8.0/clientapp/public/manifest.json
 /Users/edvinrunhellen/Documents/CoachClone.Api/bin/Debug/net8.0/clientapp/tsconfig.json
+/Users/edvinrunhellen/Documents/CoachClone.Api/bin/Debug/net8.0/OpenAI.dll
